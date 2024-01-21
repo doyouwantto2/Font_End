@@ -31,6 +31,10 @@ a{
     padding-right: 0.5rem;
 }
 
+.main-icon a{
+    padding-left: 0.5rem;
+}
+
 .main-icon a:hover{
     color: palevioletred;
 }
@@ -46,8 +50,7 @@ a{
     }
 }
 
-/*Những option trên thanh ngang ngoại trừ mục "Chùa cúng", tức là nó bao gồm cả discord nữa. 
-Sau này có thêm gì thì chỉ cần bổ sung thẻ li thôi*/
+/*Những option trên thanh ngang ngoại trừ mục "Chùa cúng"*/
 
 .option{
     width: 80%;
@@ -62,6 +65,7 @@ Sau này có thêm gì thì chỉ cần bổ sung thẻ li thôi*/
     padding-right: 2rem;
 }
 
+
 .option ul li:hover{
     background-color: green;
 }
@@ -75,7 +79,7 @@ Sau này có thêm gì thì chỉ cần bổ sung thẻ li thôi*/
     position: relative;
 }
 
-/*Đây là container của hai option phụ nhá*/
+/*Bên dưới chỗ thông tin thêm*/
 .infomation{
     display: none;
 }
@@ -84,9 +88,6 @@ Sau này có thêm gì thì chỉ cần bổ sung thẻ li thôi*/
     display: block;
 }
 
-/*Đây là 2 option phụ của mục thông tin thêm nhé
-Chỗ này anh xài hơi nhiều padding chủ yếu nền nó lệch quá nên phải căn lại
-*/
 .info-option-1{
     font-size: 2rem;
     width: 20rem;
