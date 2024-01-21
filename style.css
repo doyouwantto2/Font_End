@@ -1,1 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
 
+:root{
+    --navigation-height: 5.5rem;
+}
+
+a{
+    color: black;
+}
+
+/*Thành phần của thanh navbar*/
+.navigation{
+    height: var(--navigation-height);
+    width: 100%;
+    background-color: yellow;
+    line-height: var(--navigation-height);
+}
+
+/*Animation cho bông hoa (Lát sửa lại)*/
+
+.main-icon{
+    display: flex;
+    float: left;
+    font-size: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.main-icon a:hover{
+    color: palevioletred;
+}
+
+.apricot-flower{
+    animation: flower-rotation 1.5s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes flower-rotation {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*Những option trên thanh ngang ngoại trừ mục "Chùa cúng", tức là nó bao gồm cả discord nữa. 
+Sau này có thêm gì thì chỉ cần bổ sung thẻ li thôi*/
+
+.option{
+    width: 80%;
+    position: relative;
+}
+
+.option ul li {
+    display: flex;
+    float: left;
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.option ul li:hover{
+    background-color: green;
+}
+
+.option ul li a:hover{
+    color: greenyellow;
+}
+
+.info-option-container{
+    width: 18.5rem;
+    position: relative;
+}
+
+/*Đây là container của hai option phụ nhá*/
+.infomation{
+    display: none;
+}
+
+.info-option-container:hover .infomation{
+    display: block;
+}
+
+/*Đây là 2 option phụ của mục thông tin thêm nhé
+Chỗ này anh xài hơi nhiều padding chủ yếu nền nó lệch quá nên phải căn lại
+*/
+.info-option-1{
+    font-size: 2rem;
+    width: 20rem;
+    text-align: center;
+    position: absolute;
+    padding-right: 0.5rem;
+    padding-left: 2rem;
+    margin-left: -2rem;
+    background-color: yellowgreen;
+}
+
+.info-option-1:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.info-option-1:hover a{
+    color: whitesmoke;
+}
+
+.info-option-2{
+    width: 20rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    position: absolute;
+    padding-right: 0.5rem;
+    padding-left: 2rem;
+    margin-left: -2rem;
+    background-color: yellowgreen;
+}
+
+.info-option-2:hover{
+    background-color: green;
+}
+
+.info-option-2:hover a{
+    color: whitesmoke;
+}
